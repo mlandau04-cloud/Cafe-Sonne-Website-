@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Sonne – Wiesbaden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-sun">☀</span>
+        <span>Café Sonne</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeMenu()">Über uns</a></li>
+        <li><a href="#menu" onclick="closeMenu()">Speisekarte</a></li>
+        <li><a href="#reviews" onclick="closeMenu()">Rezensionen</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Kontakt</a></li>
+        <li><a href="tel:061116879199" class="nav-cta" onclick="closeMenu()">Anrufen</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="sun-rays">
+      <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+      <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+      <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+      <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Willkommen im</p>
+      <h1 class="hero-title">Café<br /><em>Sonne</em></h1>
+      <p class="hero-sub">Frühstück · Brunch · Kaffee & Kuchen · Lunch</p>
+      <div class="hero-badges">
+        <span class="badge">⭐ 4,8 · 109 Bewertungen</span>
+        <span class="badge">🐾 Hundefreundlich</span>
+        <span class="badge">10 – 20 € p.P.</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Speisekarte ansehen</a>
+        <a href="#contact" class="btn btn-outline">Öffnungszeiten</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-inner">
+      <span>Frühstück ab 8 Uhr</span>
+      <span class="dot">✦</span>
+      <span>Hausgemachter Kuchen</span>
+      <span class="dot">✦</span>
+      <span>Knuspriges Frühstück</span>
+      <span class="dot">✦</span>
+      <span>Frische Waffeln</span>
+      <span class="dot">✦</span>
+      <span>Specialty Coffee</span>
+      <span class="dot">✦</span>
+      <span>Hundefreundlich</span>
+      <span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card card-a">
+          <div class="card-inner">
+            <span class="card-icon">☕</span>
+            <p>Specialty Coffee</p>
+          </div>
+        </div>
+        <div class="about-card card-b">
+          <div class="card-inner">
+            <span class="card-icon">🍰</span>
+            <p>Hausgemachter Kuchen</p>
+          </div>
+        </div>
+        <div class="about-card card-c">
+          <div class="card-inner">
+            <span class="card-icon">🌞</span>
+            <p>Gemütliche Atmosphäre</p>
+          </div>
+        </div>
+        <div class="about-orb"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">Unsere Geschichte</p>
+        <h2 class="section-title">Ein Ort zum<br /><em>Wohlfühlen</em></h2>
+        <p class="about-body">Das Café Sonne ist ein kleines, feines Bistro im Herzen von Wiesbaden-Biebrich. Von außen unscheinbar, erwartet Sie drinnen eine warme, einladende Atmosphäre – sauber, gemütlich und herzlich.</p>
+        <p class="about-body">Ob ein entspanntes Frühstück am Morgen, ein ausgiebiger Brunch mit Freunden oder einfach Kaffee und Kuchen am Nachmittag – bei uns kommen Sie gerne wieder.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">4,8</span>
+            <span class="stat-label">★ Bewertung</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">109</span>
+            <span class="stat-label">Rezensionen</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">🐾</span>
+            <span class="stat-label">Hunde willkommen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section section-dark">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow light">Was wir anbieten</p>
+        <h2 class="section-title light">Unsere <em>Speisekarte</em></h2>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab active" onclick="showTab('kaffee', this)">Kaffee</button>
+        <button class="tab" onclick="showTab('fruehstueck', this)">Frühstück</button>
+        <button class="tab" onclick="showTab('kuchen', this)">Kuchen & Süßes</button>
+        <button class="tab" onclick="showTab('lunch', this)">Lunch</button>
+      </div>
+
+      <div class="menu-panel active" id="tab-kaffee">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Espresso</span><span class="menu-price">2,50 €</span></div>
+            <p class="menu-desc">Kräftig, konzentriert, aromatisch</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Cappuccino</span><span class="menu-price">3,80 €</span></div>
+            <p class="menu-desc">Espresso mit cremigem Milchschaum</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-top"><span class="menu-name">Latte Macchiato</span><span class="menu-price">4,20 €</span></div>
+            <p class="menu-desc">Sanfte Espressosäulen im aufgeschäumten Milchglas</p>
+            <span class="menu-badge">Beliebt</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Café au Lait</span><span class="menu-price">3,60 €</span></div>
+            <p class="menu-desc">Filterkaffee mit heißer Milch</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Flat White</span><span class="menu-price">4,00 €</span></div>
+            <p class="menu-desc">Doppelter Espresso, seidig aufgeschäumte Milch</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Heiße Schokolade</span><span class="menu-price">3,80 €</span></div>
+            <p class="menu-desc">Cremig, reichhaltig, hausgemacht</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="tab-fruehstueck">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-top"><span class="menu-name">Sonnenschein-Frühstück</span><span class="menu-price">11,90 €</span></div>
+            <p class="menu-desc">Rührei, Speck, Toast, Butter, Marmelade, Orangensaft, Kaffee</p>
+            <span class="menu-badge">Klassiker</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Avocado Toast</span><span class="menu-price">9,50 €</span></div>
+            <p class="menu-desc">Frische Avocado, Poached Egg, Kräuter, Sauerteigbrot</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Croissant & Kaffee</span><span class="menu-price">6,50 €</span></div>
+            <p class="menu-desc">Buttercroissant, Butter, Konfitüre, Espresso oder Americano</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Granola Bowl</span><span class="menu-price">8,50 €</span></div>
+            <p class="menu-desc">Knuspriges Granola, Joghurt, frische Früchte, Honig</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Pancakes</span><span class="menu-price">9,90 €</span></div>
+            <p class="menu-desc">Drei Pancakes, Ahornsirup, frische Beeren</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Brunch-Teller</span><span class="menu-price">14,90 €</span></div>
+            <p class="menu-desc">Großes Frühstücksboard für zwei Personen</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="tab-kuchen">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-top"><span class="menu-name">Waffeln</span><span class="menu-price">6,50 €</span></div>
+            <p class="menu-desc">Knusprige Waffeln mit Schlagsahne und Puderzucker</p>
+            <span class="menu-badge">Hausgemacht</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Käsekuchen</span><span class="menu-price">4,20 €</span></div>
+            <p class="menu-desc">Cremiger Quarkkuchen nach Hausrezept</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Schwarzwälder Kirschtorte</span><span class="menu-price">4,80 €</span></div>
+            <p class="menu-desc">Schokolade, Kirschen, Sahne – ein Klassiker</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Apfelkuchen</span><span class="menu-price">3,90 €</span></div>
+            <p class="menu-desc">Mit frischen Äpfeln, Zimt und Vanillecreme</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Muffin des Tages</span><span class="menu-price">2,80 €</span></div>
+            <p class="menu-desc">Täglich wechselnde hausgemachte Kreationen</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Tiramisu</span><span class="menu-price">5,50 €</span></div>
+            <p class="menu-desc">Klassisches Tiramisu, Mascarpone, Espresso</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="tab-lunch">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Tagessuppe</span><span class="menu-price">5,90 €</span></div>
+            <p class="menu-desc">Frisch zubereitete Suppe des Tages mit Brot</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-top"><span class="menu-name">Quiche Lorraine</span><span class="menu-price">8,50 €</span></div>
+            <p class="menu-desc">Hausgemachte Quiche mit Salat</p>
+            <span class="menu-badge">Empfohlen</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Club Sandwich</span><span class="menu-price">9,90 €</span></div>
+            <p class="menu-desc">Toastbrot, Hähnchen, Speck, Salat, Tomate, Ei</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Caesar Salad</span><span class="menu-price">10,50 €</span></div>
+            <p class="menu-desc">Römersalat, Parmesan, Croutons, Caesar-Dressing</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Bagel mit Lachs</span><span class="menu-price">11,90 €</span></div>
+            <p class="menu-desc">Geräucherter Lachs, Frischkäse, Kapern, rote Zwiebeln</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-top"><span class="menu-name">Tagesgericht</span><span class="menu-price">ab 12,90 €</span></div>
+            <p class="menu-desc">Fragen Sie unser Team nach dem Tagesangebot</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="menu-note">Alle Preise inkl. MwSt. · Speisekarte kann variieren · Bitte fragen Sie nach saisonalen Specials</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">Was unsere Gäste sagen</p>
+        <h2 class="section-title">Rezensionen</h2>
+        <div class="rating-summary">
+          <div class="rating-big">4,8</div>
+          <div class="rating-stars-big">★★★★★</div>
+          <div class="rating-count">109 Google-Bewertungen</div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Café Sonne in Wiesbaden ist einfach ein toller Ort! Der Service ist unglaublich freundlich und aufmerksam, man fühlt sich sofort willkommen. Das Essen ist sehr lecker – egal ob Frühstück, Brunch, Lunch oder Kaffee und Kuchen, hier stimmt alles."</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div>
+              <p class="review-name">Miky Pa</p>
+              <p class="review-meta">Local Guide · 48 Rezensionen</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card review-card--accent">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Heute waren wir mal im Café Sonne. Eine schöne Auswahl an Kuchen gab es. Unsere Hündin bekam direkt ein Napf mit Wasser hingestellt. Der Service ist sehr freundlich. Es ist toll ein so schönes Café direkt im Ort zu haben."</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <p class="review-name">Sukanya Weiß</p>
+              <p class="review-meta">Local Guide · 49 Rezensionen</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Von außen ganz unscheinbar. Aber man sollte wirklich reingehen. Wir waren mittags zum Cafe und Kuchen. Waren sehr angenehm überrascht. Super Kuchen und echt leckerer Cafe."</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <p class="review-name">Sandra Becker</p>
+              <p class="review-meta">Local Guide · 203 Rezensionen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-quotes">
+        <blockquote>"Die Bedienung ist auch extrem freundlich und zuvorkommend."</blockquote>
+        <blockquote>"Ein sehr schönes Cafe, sehr nette Bedienung und total leckerer Kuchen."</blockquote>
+        <blockquote>"Sehr sauberes kleines gemütliches Café/Bistro, komme gerne wieder!"</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-warm">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">Besuchen Sie uns</p>
+        <h2 class="section-title">Kontakt &amp;<br /><em>Öffnungszeiten</em></h2>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <p class="info-label">Adresse</p>
+              <p class="info-val">Berliner Str. 265<br />65205 Wiesbaden</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <p class="info-label">Telefon</p>
+              <a href="tel:061116879199" class="info-val info-link">0611 16879199</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🌐</span>
+            <div>
+              <p class="info-label">Website</p>
+              <a href="http://www-kaffe.com" target="_blank" rel="noopener" class="info-val info-link">www-kaffe.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="hours-table">
+          <h3 class="hours-title">Öffnungszeiten</h3>
+          <div class="hours-row">
+            <span class="hours-day">Montag – Freitag</span>
+            <span class="hours-time">08:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Samstag</span>
+            <span class="hours-time">09:00 – 18:00 Uhr</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Sonntag</span>
+            <span class="hours-time">10:00 – 17:00 Uhr</span>
+          </div>
+        </div>
+        <div class="service-tags">
+          <span class="service-tag">🍽 Vor Ort</span>
+          <span class="service-tag">🥡 Zum Mitnehmen</span>
+          <span class="service-tag">🛵 Lieferung</span>
+          <span class="service-tag">🐾 Hunde willkommen</span>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.123456789!2d8.2177!3d50.0407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd90c2c13ea9d9%3A0x0!2sBerliner+Str.+265%2C+65205+Wiesbaden!5e0!3m2!1sde!2sde!4v1234567890"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Café Sonne Standort"></iframe>
+        </div>
+        <a href="https://maps.google.com/?q=Berliner+Str.+265,+65205+Wiesbaden" target="_blank" rel="noopener" class="btn btn-primary map-btn">In Google Maps öffnen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-sun large">☀</span>
+        <p class="footer-name">Café Sonne</p>
+        <p class="footer-tagline">Berliner Str. 265 · 65205 Wiesbaden</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Über uns</a>
+        <a href="#menu">Speisekarte</a>
+        <a href="#reviews">Rezensionen</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:061116879199">0611 16879199</a>
+        <a href="http://www-kaffe.com" target="_blank" rel="noopener">www-kaffe.com</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Café Sonne Wiesbaden · Alle Rechte vorbehalten</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
